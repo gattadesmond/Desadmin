@@ -1,3 +1,30 @@
+# Desadmin dashboard 
+
+Desadmin is a template admin base on Semantic UI, designed for a great experience!
+
+Desadmin allows developers to build beautiful websites fast, with concise HTML, intuitive javascript, and simplified debugging, helping make front-end development a delightful experience.
+
+Enjoy using Desadmin and stay tuned to endless amazing updates! 
+
+**Key feature**
+
+* `Semantic UI` The core file, have 50+ UI elements, 3000 + CSS variables.
+* `Easyweb builder tool` : Metasmith(static site generator) & Handlebars for building template.
+* SASS, Flexbox friendly
+
+**Plugins, framework include:**
+
+* [Easyweb builder](https://github.com/easywebhub/easy-websites) : static site generator
+
+* [Semantic UI](https://github.com/semantic-org/semantic-ui/) : UI component framework
+
+* [pickadate](https://github.com/amsul/pickadate.js/) : date & time input picker.
+* [DataTables](https://github.com/DataTables/DataTables) : adding sorting, paging and filtering abilities to plain HTML tables.
+* [toastr](https://github.com/CodeSeven/toastr) : Javascript library for non-blocking notifications.
+
+
+#### To get started, check out the document EasyWeb
+
 ### Hướng dẫn sử dụng source EasyWeb
 
 **Cài đặt**
@@ -76,3 +103,6 @@ site.style = {
     }
 };
 ```
+
+
+## Bugs
