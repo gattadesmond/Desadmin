@@ -1,0 +1,30 @@
+@charset 'utf-8';
+
+
+//Include Mixin
+@import "mixins/mixins";
+
+//Include utilities
+@import "utilities/helpers";
+
+@import "variables";
+
+@import "flexboxgrid";
+
+@import "layout/header";
+@import "layout/home";
+
+
+
+@import "datatable";
+@import "toastr";
+
+@import "pickadate/classic";
+@import "pickadate/classic.date";
+
+body{
+    background: $offWhite;
+}
+
+
+
