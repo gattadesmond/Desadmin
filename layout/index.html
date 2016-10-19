@@ -87,9 +87,17 @@
                     </select>
                 </div>
 
+
+
                 <div class="field">
                     <label>Chọn ngày</label>
-                    <input type="text" class="datepicker">
+                    <!--<input type="text" class="datepicker" placeholder="Chọn ngày">-->
+
+                    <div class="ui left icon input">
+                        <input type="text" class="datepicker">
+                        <i class="calendar icon"></i>
+                    </div>
+
                 </div>
 
                 <div class="field">
@@ -579,55 +587,7 @@
 
 <button class="show-modal" data-modal="modal1">Roger Federer</button>
 
-<div class="ui modal large" id="modal1">
-    <i class="close icon"></i>
-    <div class="header">
-        Modal Title
-    </div>
-    <div class="image content">
-        <div class="image">
-            An image can appear on left or an icon
-        </div>
-        <div class="description">
-            A description can appear on the right
-        </div>
-    </div>
-    <div class="actions">
-        <div class="ui deny button">
-            Hủy
-        </div>
-        <div class="ui positive right labeled icon button">
-            Tạo đơn hàng
-            <i class="checkmark icon"></i>
-        </div>
-    </div>
-</div>
-
-
-<div class="ui modal" id="modal2">
-    <i class="close icon"></i>
-    <div class="header">
-        Modal Title
-    </div>
-    <div class="image content">
-        <div class="image">
-            An image can appear on left or an icon
-        </div>
-        <div class="description">
-            A description can appear on the right
-        </div>
-    </div>
-    <div class="actions">
-        <div class="ui deny button">
-            Hủy
-        </div>
-        <div class="ui positive right labeled icon button">
-            Tạo đơn hàng
-            <i class="checkmark icon"></i>
-        </div>
-    </div>
-</div>
-
+{{> modal}}
 
 {{/content}}
 
