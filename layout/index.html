@@ -33,7 +33,7 @@
     <h3>Quản lý Banner &nbsp;
 
         <div class="ui small basic icon buttons">
-            <a href="chinhsua.html" class="ui button "><i class="sticky note outline icon "></i> Tạo mới</a>
+            <a href="#modal1" class="ui button show-modal"><i class="sticky note outline icon "></i> Tạo mới</a>
             <a href="#link1" class="ui button"><i class="filter icon"></i> Lọc sản phẩm lỗi</a>
             <a href="#link1" class="ui button"><i class="file excel outline icon"></i> Xuất Excel</a>
             <a href="#link1" class="ui button"><i class="download icon"></i> Import Excel</a>
@@ -574,9 +574,64 @@
 
 
 <!--</div>-->
+<a href="#modal1" class="show-modal">Hien Modal</a>
+<a href="#modal2" class="show-modal">Hien Modal</a>
+
+<button class="show-modal" data-modal="modal1">Roger Federer</button>
+
+<div class="ui modal large" id="modal1">
+    <i class="close icon"></i>
+    <div class="header">
+        Modal Title
+    </div>
+    <div class="image content">
+        <div class="image">
+            An image can appear on left or an icon
+        </div>
+        <div class="description">
+            A description can appear on the right
+        </div>
+    </div>
+    <div class="actions">
+        <div class="ui deny button">
+            Hủy
+        </div>
+        <div class="ui positive right labeled icon button">
+            Tạo đơn hàng
+            <i class="checkmark icon"></i>
+        </div>
+    </div>
+</div>
+
+
+<div class="ui modal" id="modal2">
+    <i class="close icon"></i>
+    <div class="header">
+        Modal Title
+    </div>
+    <div class="image content">
+        <div class="image">
+            An image can appear on left or an icon
+        </div>
+        <div class="description">
+            A description can appear on the right
+        </div>
+    </div>
+    <div class="actions">
+        <div class="ui deny button">
+            Hủy
+        </div>
+        <div class="ui positive right labeled icon button">
+            Tạo đơn hàng
+            <i class="checkmark icon"></i>
+        </div>
+    </div>
+</div>
 
 
 {{/content}}
+
+
 
 
 {{#content "foot" mode="prepend"}}
