@@ -19,7 +19,7 @@
     width: 100%;
     background: $offWhite;
     margin-top: 0;
-    padding: 15px 5px 15px 15px;
+    padding: 0px 5px 0px 15px;
   }
 
   @extend .shadow1;
@@ -64,4 +64,21 @@
 
 .flex-nowrap{
   flex-wrap: nowrap !important;
+}
+
+.filter{
+  .fields{
+    flex-wrap: wrap;
+  }
+}
+
+.desadmin-sidebar-accordion.ui.accordion{
+  .title{
+    font-weight: bold;
+  }
+
+  .title.active{
+    color: white;
+    background: $green;
+  }
 }

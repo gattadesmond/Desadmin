@@ -24,6 +24,10 @@ $('.message .close')
     })
 ;
 
+$('.ui.accordion')
+    .accordion()
+;
+
 $('.datepicker').pickadate({
     monthsFull: ["Tháng Một", "Tháng Hai", "Tháng Ba", "Tháng Tư", "Tháng Năm", "Tháng Sáu", "Tháng Bảy", "Tháng Tám", "Tháng Chín", "Tháng Mười", "Tháng Mười Một", "Tháng Mười Hai"],
     monthsShort: ["Một", "Hai", "Ba", "Tư", "Năm", "Sáu", "Bảy", "Tám", "Chín", "Mưới", "Mười Một", "Mười Hai"],

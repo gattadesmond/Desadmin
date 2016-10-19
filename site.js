@@ -106,7 +106,7 @@ site.metalsmith = {
     //},
 
     'metalsmith-permalinks':    {
-        '_enable':  true,
+        '_enable':  false,
         // default config
         'pattern':  ':slug',
         'relative': false,
