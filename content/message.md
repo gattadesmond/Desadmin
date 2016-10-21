@@ -1,11 +1,11 @@
 ---json
 {
     "slug": "",
-    "layout": "index.html",
+    "layout": "message.html",
     "title": "Home page of EasyWebHub Advanced Template",
     "header": "How people build website",
     "description": "Thousands of developers use EasyWebHub to build personal, company, blog, ecommerce websites, support their businesses, and work together on open source technologies.",
-    "activeLink" : "index"
+    "activeLink" : "message"
 }
 ---
 INDEX CONTENTS

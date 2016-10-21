@@ -68,12 +68,26 @@ var Desadmin = function () {
             $(name)
                 .modal({
                     transition: "fade",
-                    closable: false
+                    closable: false,
+                    autofocus: false,
+                    detachable: false,
+                    onShow: function(){
+
+                    }
                 })
                 .modal('show')
 
         });
     };
+
+
+    var handleTinyMce = function(){
+        //Init tiny MCE normal
+        tinymce.init({
+            selector:'textarea.editor-tinymce',
+        });
+
+    }
 
     //handle date picker for semantic ui
 
@@ -240,12 +254,16 @@ var Desadmin = function () {
         initDatapicker: function () {
             handleDatePicker();
         },
+        initTinyMce: function(){
+            handleTinyMce();
+        },
 
         init: function () {
             this.initSemanticUI();
             this.initTable();
             this.initDataTable();
             this.initDatapicker();
+            this.initTinyMce();
         },
     }
 }(jQuery);
@@ -253,4 +271,6 @@ var Desadmin = function () {
 jQuery(document).ready(function() {
     // init Desadmin core componets
     Desadmin.init();
+
+
 });

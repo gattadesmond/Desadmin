@@ -18,6 +18,8 @@
     <link rel="stylesheet" type="text/css" href="semantic/semantic.min.css">
     <link rel="stylesheet" type="text/css" href="datatable/dataTables.semanticui.min.css">
 
+    <link rel="stylesheet" type="text/css" href="prism/prism.css">
+
 
     <script src="js/jquery.js"></script>
     <script src="semantic/semantic.min.js"></script>
@@ -100,15 +102,27 @@
                 <div class="content active">
 
                     <div class="ui secondary vertical menu">
-                        <a class="item active">
-                            Affiliate
+                        <a href="index.html" class="item {{#ifCond activeLink 'index'}} active {{else}} {{/ifCond}}">
+                            Trang chủ
                         </a>
-                        <a class="item">
-                            Factory
+                       
+                         <a href="header.html " class="item {{#ifCond activeLink 'header'}} active {{else}} {{/ifCond}}">
+                            Header
                         </a>
-                        <a class="item">
-                            Sản phẩm
+
+                        <a href="message.html " class="item {{#ifCond activeLink 'message'}} active {{else}} {{/ifCond}}">
+                            Message
                         </a>
+
+
+                        <a href="table.html" class="item {{#ifCond activeLink 'table'}} active {{else}} {{/ifCond}}">
+                            Tables
+                        </a>
+
+                        <a href="blank.html" class="item {{#ifCond activeLink 'blank'}} active {{else}} {{/ifCond}}">
+                            Blank page
+                        </a>
+
 
                         <a class="item">
                             QL Đơn hàng
@@ -145,7 +159,7 @@
                 </div>
                 <div class="content ">
                     <div class="ui secondary vertical menu">
-                        <a class="item active">
+                        <a class="item ">
                             Affiliate
                         </a>
                         <a class="item">
@@ -171,16 +185,7 @@
                             VTA App
                         </a>
 
-                        <div class="ui dropdown item">
-                            <i class="dropdown icon"></i>
-                            Maybe more
-                            <div class="menu">
-                                <div class="header">Text Size</div>
-                                <a class="item">Small</a>
-                                <a class="item">Medium</a>
-                                <a class="item">Large</a>
-                            </div>
-                        </div>
+
                     </div>
 
                 </div>
@@ -191,7 +196,7 @@
                 <div class="content">
 
                     <div class="ui secondary vertical menu">
-                        <a class="item active">
+                        <a class="item ">
                             Affiliate
                         </a>
                         <a class="item">
@@ -217,43 +222,10 @@
                             VTA App
                         </a>
 
-                        <div class="ui dropdown item">
-                            <i class="dropdown icon"></i>
-                            Maybe more
-                            <div class="menu">
-                                <div class="header">Text Size</div>
-                                <a class="item">Small</a>
-                                <a class="item">Medium</a>
-                                <a class="item">Large</a>
-                            </div>
-                        </div>
                     </div>
 
                 </div>
             </div>
-
-
-
-            <!--<div class="ui floating labeled icon dropdown button large fluid green    ">-->
-                <!--<i class="cubes icon"></i>-->
-                <!--<span class="text">Chọn dự án</span>-->
-                <!--<div class="menu">-->
-                    <!--<div class="header">-->
-                        <!--<i class="tags icon"></i>-->
-                        <!--Chọn dự án-->
-                    <!--</div>-->
-                    <!--<div class="item">-->
-                        <!--MOT-->
-                    <!--</div>-->
-                    <!--<div class="item">-->
-                        <!--MARKETING-->
-                    <!--</div>-->
-                    <!--<div class="item">-->
-                        <!--ADMINSTRATOR-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-
 
         </div>
 
@@ -288,6 +260,11 @@
 
 <script src="pickadate/picker.js"></script>
 <script src="pickadate/picker.date.js"></script>
+
+<script src="tinymce/tinymce.min.js"></script>
+
+<script src="prism/prism.js"></script>
+
 
 <script src="js/main.js"></script>
 
