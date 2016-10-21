@@ -43,7 +43,7 @@
 
 
     <h4 class="ui dividing header">
-       Message thông báo có nút close
+        Message thông báo có nút close
     </h4>
     <div class="ui positive message small">
         <i class="close icon"></i>
@@ -53,17 +53,155 @@
         <p>Go to your <b>special offers</b> page to see now.</p>
     </div>
 
-    <pre class="language-markup"><code class="language-markup">
 
+    <div class="ui accordion field">
+        <div class="title">
+            <i class="icon dropdown"></i>
+            Xem code
+        </div>
+        <div class="content field">
 
-
+          <pre class="language-markup"><code class="language-markup">
+&lt;div class="ui positive message small"&gt;
+    &lt;i class="close icon"&gt;&lt;/i&gt;
+    &lt;div class="header"&gt;
+        Thêm sản phẩm thành công
+    &lt;/div&gt;
+    &lt;p&gt;Go to your &lt;b&gt;special offers&lt;/b&gt; page to see now.&lt;/p&gt;
+&lt;/div&gt;
     </code></pre>
 
+            <pre class=" language-javascript"><code class=" language-javascript">
+$('.message .close')
+    .on('click', function () {
+        $(this)
+            .closest('.message')
+            .transition('fade')
+        ;
+});
+    </code></pre>
+
+
+        </div>
+    </div>
+
+    <h4 class="ui dividing header">
+        Warning
+    </h4>
+
+    <div class="ui warning message">
+        <i class="close icon"></i>
+        <div class="header">
+            You must register before you can do that!
+        </div>
+        Visit our registration page, then try again
+    </div>
+
+
+    <div class="ui accordion field">
+        <div class="title">
+            <i class="icon dropdown"></i>
+            Xem code
+        </div>
+        <div class="content field">
+
+          <pre class="language-markup"><code class="language-markup">
+&lt;div class="ui warning message"&gt;
+  &lt;i class="close icon"&gt;&lt;/i&gt;
+  &lt;div class="header"&gt;
+    You must register before you can do that!
+  &lt;/div&gt;
+  Visit our registration page, then try again
+&lt;/div&gt;
+    </code></pre>
+
+        </div>
+    </div>
+
+
+    <h4 class="ui dividing header">
+        Info
+    </h4>
+
+    <div class="ui info message">
+        <i class="close icon"></i>
+        <div class="header">
+            Was this what you wanted?
+        </div>
+        <ul class="list">
+            <li>It's good to see you again.</li>
+            <li>Did you know it's been a while?</li>
+        </ul>
+    </div>
+
+
+    <div class="ui accordion field">
+        <div class="title">
+            <i class="icon dropdown"></i>
+            Xem code
+        </div>
+        <div class="content field">
+
+          <pre class="language-markup"><code class="language-markup">
+&lt;div class="ui info message"&gt;
+  &lt;i class="close icon"&gt;&lt;/i&gt;
+  &lt;div class="header"&gt;
+    Was this what you wanted?
+  &lt;/div&gt;
+  &lt;ul class="list"&gt;
+    &lt;li&gt;It's good to see you again.&lt;/li&gt;
+    &lt;li&gt;Did you know it's been a while?&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+    </code></pre>
+
+        </div>
+    </div>
+
+
+    <h4 class="ui dividing header">
+        Negative / Error
+    </h4>
+
+    <div class="ui error message">
+        <i class="close icon"></i>
+        <div class="header">
+            There was some errors with your submission
+        </div>
+        <ul class="list">
+            <li>You must include both a upper and lower case letters in your password.</li>
+            <li>You need to select your home country.</li>
+        </ul>
+    </div>
+
+
+    <div class="ui accordion field">
+        <div class="title">
+            <i class="icon dropdown"></i>
+            Xem code
+        </div>
+        <div class="content field">
+
+          <pre class="language-markup"><code class="language-markup">
+&lt;div class="ui error message"&gt;
+  &lt;i class="close icon"&gt;&lt;/i&gt;
+  &lt;div class="header"&gt;
+    There was some errors with your submission
+  &lt;/div&gt;
+  &lt;ul class="list"&gt;
+    &lt;li&gt;You must include both a upper and lower case letters in your password.&lt;/li&gt;
+    &lt;li&gt;You need to select your home country.&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+    </code></pre>
+
+        </div>
+    </div>
 
 
 
     <div class="ui small info message">
-        Xem thêm về header tại đây : <a href="http://semantic-ui.com/elements/header.html" target="_blank">Link</a>
+        Xem thêm về mesasge tại đây : <a href="http://semantic-ui.com/collections/message.html" target="_blank">Link</a>
     </div>
 
 
@@ -75,8 +213,6 @@
 
 
 {{/content}}
-
-
 
 
 {{#content "foot" mode="prepend"}}
