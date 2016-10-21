@@ -115,9 +115,15 @@
                         </a>
 
 
-                        <a href="table.html" class="item {{#ifCond activeLink 'table'}} active {{else}} {{/ifCond}}">
-                            Tables
-                        </a>
+                        <div class="ui dropdown item" >
+                            <i class="dropdown icon"></i>
+                            Table
+                            <div class="menu">
+                                <a href="datatable.html" class="item  {{#ifCond activeLink 'datatable'}} active {{else}} {{/ifCond}}">Datatable</a>
+                                <a href="table.html" class="item  {{#ifCond activeLink 'table'}} active {{else}} {{/ifCond}}">Normal table</a>
+                            </div>
+                        </div>
+
 
                         <a href="blank.html" class="item {{#ifCond activeLink 'blank'}} active {{else}} {{/ifCond}}">
                             Blank page
