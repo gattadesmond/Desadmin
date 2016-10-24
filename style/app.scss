@@ -22,6 +22,11 @@
 @import "pickadate/classic";
 @import "pickadate/classic.date";
 
+
+@import "sweetalert/sweetalert";
+@import "sweetalert/loader-animation";
+@import "sweetalert/ie9";
+
 body{
     background: $offWhite;
 }

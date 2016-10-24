@@ -1,0 +1,232 @@
+{{#extend "layout"}}
+{{#content "head" mode="append"}}
+<!--<link rel="stylesheet" href="assets/css/home.css" />-->
+{{/content}}
+
+
+{{#content "body"}}
+
+
+<div class="ui secondary pointing menu menu-ngang">
+    <a class="active item">
+        QL Banner
+    </a>
+    <a class="item">
+        QL Đối tác
+    </a>
+    <a class="item">
+        QL Chương trình
+    </a>
+
+    <a class="item">
+        Co-Brand
+    </a>
+    <a class="item">
+        Sản phẩm bán chạy
+    </a>
+
+</div>
+
+
+<div class="content-padding">
+
+    <h3>Checkbox thường sử dụng
+
+        <div class="ui small basic icon buttons">
+            <a href="#modal1" class="ui button show-modal"><i class="sticky note outline icon "></i> Tạo mới</a>
+            <a href="#link1" class="ui button"><i class="filter icon"></i> Lọc sản phẩm lỗi</a>
+            <a href="#link1" class="ui button"><i class="file excel outline icon"></i> Xuất Excel</a>
+            <a href="#link1" class="ui button"><i class="download icon"></i> Import Excel</a>
+        </div>
+
+    </h3>
+
+    <h5>Checkbox</h5>
+
+    <div class="ui checkbox">
+        <input type="checkbox" name="example">
+        <label>Make my profile visible</label>
+    </div>
+
+
+    <pre class="language-markup"><code class="language-markup">
+&lt;div class="ui checkbox"&gt;
+  &lt;input type="checkbox" name="example"&gt;
+  &lt;label&gt;Make my profile visible&lt;/label&gt;
+&lt;/div&gt;
+    </code></pre>
+
+
+
+
+
+    <h5>Radio</h5>
+
+    <div class="ui radio checkbox">
+        <input type="radio" name="radio" checked="checked">
+        <label>Radio choice</label>
+    </div>
+
+    <pre class="language-markup"><code class="language-markup">
+&lt;div class="ui radio checkbox"&gt;
+  &lt;input type="radio" name="radio" checked="checked"&gt;
+  &lt;label&gt;Radio choice&lt;/label&gt;
+&lt;/div&gt;
+    </code></pre>
+
+
+    <h5>Radio Inline</h5>
+
+    <div class="ui form">
+        <div class="inline fields">
+            <label>How often do you use checkboxes?</label>
+            <div class="field">
+                <div class="ui radio checkbox">
+                    <input type="radio" name="frequency" checked="checked">
+                    <label>Once a week</label>
+                </div>
+            </div>
+            <div class="field">
+                <div class="ui radio checkbox">
+                    <input type="radio" name="frequency">
+                    <label>2-3 times a week</label>
+                </div>
+            </div>
+            <div class="field">
+                <div class="ui radio checkbox">
+                    <input type="radio" name="frequency">
+                    <label>Once a day</label>
+                </div>
+            </div>
+            <div class="field">
+                <div class="ui radio checkbox">
+                    <input type="radio" name="frequency">
+                    <label>Twice a day</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <pre class="language-markup"><code class="language-markup">
+&lt;div class="ui form"&gt;
+  &lt;div class="inline fields"&gt;
+    &lt;label&gt;How often do you use checkboxes?&lt;/label&gt;
+    &lt;div class="field"&gt;
+      &lt;div class="ui radio checkbox"&gt;
+        &lt;input type="radio" name="frequency" checked="checked"&gt;
+        &lt;label&gt;Once a week&lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="field"&gt;
+      &lt;div class="ui radio checkbox"&gt;
+        &lt;input type="radio" name="frequency"&gt;
+        &lt;label&gt;2-3 times a week&lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="field"&gt;
+      &lt;div class="ui radio checkbox"&gt;
+        &lt;input type="radio" name="frequency"&gt;
+        &lt;label&gt;Once a day&lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="field"&gt;
+      &lt;div class="ui radio checkbox"&gt;
+        &lt;input type="radio" name="frequency"&gt;
+        &lt;label&gt;Twice a day&lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+    </code></pre>
+
+
+    <h5>Radio choose</h5>
+
+    <div class="ui form">
+        <div class="grouped fields">
+            <label>How often do you use checkboxes?</label>
+            <div class="field">
+                <div class="ui radio checkbox">
+                    <input type="radio" name="example2" checked="checked">
+                    <label>Once a week</label>
+                </div>
+            </div>
+            <div class="field">
+                <div class="ui radio checkbox">
+                    <input type="radio" name="example2">
+                    <label>2-3 times a week</label>
+                </div>
+            </div>
+            <div class="field">
+                <div class="ui radio checkbox">
+                    <input type="radio" name="example2">
+                    <label>Once a day</label>
+                </div>
+            </div>
+            <div class="field">
+                <div class="ui radio checkbox">
+                    <input type="radio" name="example2">
+                    <label>Twice a day</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <pre class="language-markup"><code class="language-markup">
+&lt;div class="ui form"&gt;
+  &lt;div class="grouped fields"&gt;
+    &lt;label&gt;How often do you use checkboxes?&lt;/label&gt;
+    &lt;div class="field"&gt;
+      &lt;div class="ui radio checkbox"&gt;
+        &lt;input type="radio" name="example2" checked="checked"&gt;
+        &lt;label&gt;Once a week&lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="field"&gt;
+      &lt;div class="ui radio checkbox"&gt;
+        &lt;input type="radio" name="example2"&gt;
+        &lt;label&gt;2-3 times a week&lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="field"&gt;
+      &lt;div class="ui radio checkbox"&gt;
+        &lt;input type="radio" name="example2"&gt;
+        &lt;label&gt;Once a day&lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="field"&gt;
+      &lt;div class="ui radio checkbox"&gt;
+        &lt;input type="radio" name="example2"&gt;
+        &lt;label&gt;Twice a day&lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+    </code></pre>
+
+
+
+
+
+
+    <div class="ui small info message">
+        Xem thêm về checkbox tại đây : <a href="http://semantic-ui.com/modules/checkbox.html" target="_blank">Link</a>
+    </div>
+    
+
+</div>
+
+<br>
+
+<br>
+
+
+{{/content}}
+
+
+
+
+{{#content "foot" mode="prepend"}}
+<!--<script src="assets/js/analytics.js"></script>-->
+{{/content}}
+{{/extend}}

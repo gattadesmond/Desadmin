@@ -118,9 +118,53 @@
 &lt;/div&gt;
     </code></pre>
 
+    <h5>Date picker</h5>
+    <div class="ui left icon input">
+        <input type="text" class="datepicker">
+        <i class="calendar icon"></i>
+    </div>
+    
+    <pre class="language-markup"><code class="language-markup">
+&lt;div class="ui left icon input"&gt;
+    &lt;input type="text" class="datepicker"&gt;
+    &lt;i class="calendar icon"&gt;&lt;/i&gt;
+&lt;/div&gt;
+    </code></pre>
+
+    <pre class=" language-javascript"><code class=" language-javascript">
+$('.datepicker').pickadate({
+    monthsFull: ["Tháng Một", "Tháng Hai", "Tháng Ba", "Tháng Tư", "Tháng Năm", "Tháng Sáu", "Tháng Bảy", "Tháng Tám", "Tháng Chín", "Tháng Mười", "Tháng Mười Một", "Tháng Mười Hai"],
+    monthsShort: ["Một", "Hai", "Ba", "Tư", "Năm", "Sáu", "Bảy", "Tám", "Chín", "Mưới", "Mười Một", "Mười Hai"],
+    weekdaysFull: ["Chủ Nhật", "Thứ Hai", "Thứ Ba", "Thứ Tư", "Thứ Năm", "Thứ Sáu", "Thứ Bảy"],
+    weekdaysShort: ["C.Nhật", "T.Hai", "T.Ba", "T.Tư", "T.Năm", "T.Sáu", "T.Bảy"],
+    today: "Hôm Nay",
+    clear: "Xoá",
+    firstDay: 1,
+    formatSubmit: 'yyyy/mm/dd',
+    format: 'dd/mm/yyyy'
+})
+</code></pre>
+
+    <h5>Tinymce</h5>
+    <textarea class="editor-tinymce">Easy! You should check out MoxieManager!</textarea>
+
+    <pre class="language-markup"><code class="language-markup">
+&lt;textarea class="editor-tinymce"&gt;Easy! You should check out MoxieManager!&lt;/textarea&gt;
+    </code></pre>
+
+    <pre class=" language-javascript"><code class=" language-javascript">
+tinymce.init({
+    selector:'textarea.editor-tinymce',
+});
+</code></pre>
+
 
     <div class="ui small info message">
-        Xem thêm về input tại đây : <a href="http://semantic-ui.com/elements/input.html" target="_blank">Link</a>
+        Xem thêm về input tại đây : <a href="http://semantic-ui.com/elements/input.html" target="_blank">Link</a> <br>
+
+        Xem thêm về pickadate tại đây : <a href="http://amsul.ca/pickadate.js/date/" target="_blank">Link</a> <br>
+
+        Xem thêm về tinymce tại đây : <a href="https://www.tinymce.com/" target="_blank">Link</a>
     </div>
     
 

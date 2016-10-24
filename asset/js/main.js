@@ -80,6 +80,11 @@ var Desadmin = function () {
         });
     };
 
+    //handle checkbox Semantic
+    var handleCheckboxSemantic = function(){
+        $('.ui.checkbox').checkbox();
+    };
+
 
     var handleTinyMce = function(){
         //Init tiny MCE normal
@@ -246,6 +251,8 @@ var Desadmin = function () {
             handleAccordionSemantic();
 
             handleModalSemantic();
+
+            handleCheckboxSemantic();
         },
         initTable: function () {
             handleTable();
