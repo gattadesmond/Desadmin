@@ -30,7 +30,7 @@
 
 <div class="content-padding">
 
-    <h3>Input thường sử dụng
+    <h3>Dropdown thường sử dụng
 
         <div class="ui small basic icon buttons">
             <a href="#modal1" class="ui button show-modal"><i class="sticky note outline icon "></i> Tạo mới</a>
@@ -41,86 +41,100 @@
 
     </h3>
 
-    <h5>Input</h5>
+    <h5>Selection</h5>
 
-    <div class="ui input">
-        <input type="text" placeholder="Search...">
-    </div>
+    <select class="ui dropdown">
+        <option value="">Gender</option>
+        <option value="1">Male</option>
+        <option value="0">Female</option>
+    </select>
 
 
     <pre class="language-markup"><code class="language-markup">
-&lt;div class="ui input"&gt;
-    &lt;input type="text" placeholder="Search..."&gt;
-&lt;/div&gt;
+&lt;select class="ui dropdown"&gt;
+  &lt;option value=""&gt;Gender&lt;/option&gt;
+  &lt;option value="1"&gt;Male&lt;/option&gt;
+  &lt;option value="0"&gt;Female&lt;/option&gt;
+&lt;/select&gt;
     </code></pre>
 
-    <h5>Focus</h5>
+    <h5>Search selection</h5>
 
-    <div class="ui input focus">
-        <input type="text" placeholder="Search...">
-    </div>
-    
-    <pre class="language-markup"><code class="language-markup">
-&lt;div class="ui input focus"&gt;
-    &lt;input type="text" placeholder="Search..."&gt;
-&lt;/div&gt;
-    </code></pre>
-    
-    
-    <h5>Loading</h5>
-
-    <div class="ui icon input loading">
-        <input type="text" placeholder="Search...">
-        <i class="search icon"></i>
-    </div>
+    <select class="ui search dropdown">
+        <option value="">Gender</option>
+        <option value="1">Male</option>
+        <option value="0">Female</option>
+    </select>
 
     <pre class="language-markup"><code class="language-markup">
-&lt;div class="ui icon input loading"&gt;
-    &lt;input type="text" placeholder="Search..."&gt;
-    &lt;i class="search icon"&gt;&lt;/i&gt;
-&lt;/div&gt;
+&lt;select class="ui search dropdown"&gt;
+    &lt;option value=""&gt;Gender&lt;/option&gt;
+    &lt;option value="1"&gt;Male&lt;/option&gt;
+    &lt;option value="0"&gt;Female&lt;/option&gt;
+&lt;/select&gt;
     </code></pre>
-    
 
-    <h5>Disable</h5>
-    <div class="ui disabled input">
-        <input type="text" placeholder="Search...">
-    </div>
+
+    <h5>Multiple selection</h5>
+
+    <select name="skills" multiple="" class="ui fluid dropdown ">
+        <option value="">Skills</option>
+        <option value="css">CSS</option>
+        <option value="design">Graphic Design</option>
+        <option value="html">HTML</option>
+        <option value="javascript">Javascript</option>
+        <option value="react">React</option>
+        <option value="ui">UI Design</option>
+        <option value="ux">User Experience</option>
+    </select>
 
     <pre class="language-markup"><code class="language-markup">
-&lt;div class="ui disabled input"&gt;
-    &lt;input type="text" placeholder="Search..."&gt;
-&lt;/div&gt;
+&lt;select name="skills" multiple="" class="ui fluid dropdown "&gt;
+    &lt;option value=""&gt;Skills&lt;/option&gt;
+    &lt;option value="css"&gt;CSS&lt;/option&gt;
+    &lt;option value="design"&gt;Graphic Design&lt;/option&gt;
+    &lt;option value="html"&gt;HTML&lt;/option&gt;
+    &lt;option value="javascript"&gt;Javascript&lt;/option&gt;
+    &lt;option value="react"&gt;React&lt;/option&gt;
+    &lt;option value="ui"&gt;UI Design&lt;/option&gt;
+    &lt;option value="ux"&gt;User Experience&lt;/option&gt;
+&lt;/select&gt;
     </code></pre>
-    
-    
-    <h5>Error</h5>
 
-    <div class="ui input error">
-        <input type="text" placeholder="Search...">
-    </div>
+
+    <h5>Multiple search selection</h5>
+
+    <select name="skills" multiple="" class="ui fluid search dropdown">
+        <option value="">Skills</option>
+        <option value="css">CSS</option>
+        <option value="design">Graphic Design</option>
+        <option value="html">HTML</option>
+        <option value="javascript">Javascript</option>
+        <option value="react">React</option>
+        <option value="ui">UI Design</option>
+        <option value="ux">User Experience</option>
+    </select>
 
     <pre class="language-markup"><code class="language-markup">
-&lt;div class="ui input error"&gt;
-    &lt;input type="text" placeholder="Search..."&gt;
-&lt;/div&gt;
+&lt;select name="skills" multiple="" class="ui search  fluid dropdown"&gt;
+    &lt;option value=""&gt;Skills&lt;/option&gt;
+    &lt;option value="css"&gt;CSS&lt;/option&gt;
+    &lt;option value="design"&gt;Graphic Design&lt;/option&gt;
+    &lt;option value="html"&gt;HTML&lt;/option&gt;
+    &lt;option value="javascript"&gt;Javascript&lt;/option&gt;
+    &lt;option value="react"&gt;React&lt;/option&gt;
+    &lt;option value="ui"&gt;UI Design&lt;/option&gt;
+    &lt;option value="ux"&gt;User Experience&lt;/option&gt;
+&lt;/select&gt;
     </code></pre>
 
-    <h5>Icon</h5>
-    <div class="ui icon input">
-        <input type="text" placeholder="Search...">
-        <i class="search icon"></i>
+
+
+
+
+    <div class="ui small info message">
+        Xem thêm về dropdown tại đây : <a href="http://semantic-ui.com/modules/dropdown.html" target="_blank">Link</a>
     </div>
-    <pre class="language-markup"><code class="language-markup">
-&lt;div class="ui icon input"&gt;
-    &lt;input type="text" placeholder="Search..."&gt;
-    &lt;i class="search icon"&gt;&lt;/i&gt;
-&lt;/div&gt;
-    </code></pre>
-
-
-
-    
 
 </div>
 
