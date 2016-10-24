@@ -30,7 +30,7 @@
 
 <div class="content-padding">
 
-    <h3>Trang trống&nbsp;
+    <h3>Datatable &nbsp;
 
         <div class="ui small basic icon buttons">
             <a href="#modal1" class="ui button show-modal"><i class="sticky note outline icon "></i> Tạo mới</a>
@@ -41,8 +41,441 @@
 
     </h3>
 
+    <h4 class="ui dividing header">
+        Datatables
+    </h4>
 
-    
+    <table id="datatable1" class="ui celled table small" cellspacing="0" width="100%">
+        <thead>
+        <tr>
+
+            <th>ID</th>
+            <th>Title</th>
+            <th>Campaign</th>
+            <th>Image</th>
+            <th>URL</th>
+            <th>Start-end date</th>
+
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+
+            <td>69</td>
+            <td>gia hoi sinh vien</td>
+            <td>SINHVIEN_MAIN_BANNER</td>
+            <td><img class="ui mini image centered" src="http://semantic-ui.com/images/wireframe/image.png"></td>
+            <td>https://sinhvien.vientdonga.vn/</td>
+            <td>13/10/2016 - 19/10/2016</td>
+
+        </tr>
+
+        <tr>
+
+            <td>32</td>
+            <td>gia hoi sinh vien</td>
+            <td>SINHVIEN_MAIN_BANNER</td>
+            <td><img class="ui mini image centered" src="http://semantic-ui.com/images/wireframe/image.png"></td>
+            <td>https://sinhvien.vientdonga.vn/</td>
+            <td>13/10/2016 - 19/10/2016</td>
+
+        </tr>
+
+        </tbody>
+    </table>
+
+
+    <div class="ui accordion field">
+        <div class="title">
+            <i class="icon dropdown"></i>
+            Xem code
+        </div>
+        <div class="content field">
+            
+            
+            
+     <pre class="language-markup"><code class="language-markup">
+&lt;table id="datatable1" class="ui celled table small" cellspacing="0" width="100%"&gt;
+    &lt;thead&gt;
+    &lt;tr&gt;
+        &lt;th&gt;ID&lt;/th&gt;
+        &lt;th&gt;Title&lt;/th&gt;
+        &lt;th&gt;Campaign&lt;/th&gt;
+        &lt;th&gt;Image&lt;/th&gt;
+        &lt;th&gt;URL&lt;/th&gt;
+        &lt;th&gt;Start-end date&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+    &lt;tr&gt;
+        &lt;td&gt;69&lt;/td&gt;
+        &lt;td&gt;gia hoi sinh vien&lt;/td&gt;
+        &lt;td&gt;SINHVIEN_MAIN_BANNER&lt;/td&gt;
+        &lt;td&gt;&lt;img class="ui mini image centered" src="http://semantic-ui.com/images/wireframe/image.png"&gt;&lt;/td&gt;
+        &lt;td&gt;https://sinhvien.vientdonga.vn/&lt;/td&gt;
+        &lt;td&gt;13/10/2016 - 19/10/2016&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;32&lt;/td&gt;
+        &lt;td&gt;gia hoi sinh vien&lt;/td&gt;
+        &lt;td&gt;SINHVIEN_MAIN_BANNER&lt;/td&gt;
+        &lt;td&gt;&lt;img class="ui mini image centered" src="http://semantic-ui.com/images/wireframe/image.png"&gt;&lt;/td&gt;
+        &lt;td&gt;https://sinhvien.vientdonga.vn/&lt;/td&gt;
+        &lt;td&gt;13/10/2016 - 19/10/2016&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt; 
+    </code></pre>
+
+            <pre class=" language-javascript"><code class=" language-javascript">
+ var datatable1 = $("#datatable1");
+    datatable1.DataTable({
+        "bStateSave": true, 
+        "lengthMenu": [
+            [10, 20, 30, 40, -1],
+            [10, 20, 30, 40, "All"] 
+        ],
+        "pageLength": 30,
+        "order": [
+            [1, "asc"]
+        ] 
+    }
+);
+    </code></pre>
+
+        </div>
+    </div>
+
+
+    <h4 class="ui dividing header">
+        Datatables with checkbox, xuất pdf
+    </h4>
+
+    <table id="datatable2" class="ui celled table small" cellspacing="0" width="100%">
+        <thead>
+        <tr>
+            <th>
+                <div class="ui fitted  checkbox">
+                    <input type="checkbox" class="group-checkable" data-set="#datatable2 .checkboxes"> <label></label>
+                </div>
+            </th>
+            <th class="">ID</th>
+            <th class="">Title</th>
+            <th class="">Campaign</th>
+            <th class="">Image</th>
+            <th class="">URL</th>
+            <th class="">Start-end date</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>
+                <div class="ui fitted  checkbox">
+                    <input type="checkbox" class="checkboxes"> <label></label>
+                </div>
+            </td>
+            <td>69</td>
+            <td>gia hoi sinh vien</td>
+            <td>SINHVIEN_MAIN_BANNER</td>
+            <td><img class="ui mini image centered" src="http://semantic-ui.com/images/wireframe/image.png"></td>
+            <td>https://sinhvien.vientdonga.vn/</td>
+            <td>13/10/2016 - 19/10/2016</td>
+        </tr>
+
+        <tr>
+            <td>
+                <div class="ui fitted  checkbox">
+                    <input type="checkbox" class="checkboxes"> <label></label>
+                </div>
+            </td>
+            <td>69</td>
+            <td>gia hoi sinh vien</td>
+            <td>SINHVIEN_MAIN_BANNER</td>
+            <td><img class="ui mini image centered" src="http://semantic-ui.com/images/wireframe/image.png"></td>
+            <td>https://sinhvien.vientdonga.vn/</td>
+            <td>13/10/2016 - 19/10/2016</td>
+        </tr>
+        </tbody>
+    </table>
+
+
+    <div class="ui accordion field">
+        <div class="title">
+            <i class="icon dropdown"></i>
+            Xem code
+        </div>
+        <div class="content field">
+            
+            
+            
+     <pre class="language-markup"><code class="language-markup">
+&lt;table id="datatable2" class="ui celled table small" cellspacing="0" width="100%"&gt;
+    &lt;thead&gt;
+    &lt;tr&gt;
+        &lt;th&gt;
+            &lt;div class="ui fitted  checkbox"&gt;
+                &lt;input type="checkbox" class="group-checkable" data-set="#datatable2 .checkboxes" &gt; &lt;label&gt;&lt;/label&gt;
+            &lt;/div&gt;
+        &lt;/th&gt;
+        &lt;th class=""&gt;ID&lt;/th&gt;
+        &lt;th class=""&gt;Title&lt;/th&gt;
+        &lt;th class=""&gt;Campaign&lt;/th&gt;
+        &lt;th class=""&gt;Image&lt;/th&gt;
+        &lt;th class=""&gt;URL&lt;/th&gt;
+        &lt;th class=""&gt;Start-end date&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;div class="ui fitted  checkbox"&gt;
+                &lt;input type="checkbox" class="checkboxes"&gt; &lt;label&gt;&lt;/label&gt;
+            &lt;/div&gt;
+        &lt;/td&gt;
+        &lt;td&gt;69&lt;/td&gt;
+        &lt;td&gt;gia hoi sinh vien&lt;/td&gt;
+        &lt;td&gt;SINHVIEN_MAIN_BANNER&lt;/td&gt;
+        &lt;td&gt;&lt;img class="ui mini image centered" src="http://semantic-ui.com/images/wireframe/image.png"&gt;&lt;/td&gt;
+        &lt;td&gt;https://sinhvien.vientdonga.vn/&lt;/td&gt;
+        &lt;td&gt;13/10/2016 - 19/10/2016&lt;/td&gt;
+    &lt;/tr&gt;
+
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;div class="ui fitted  checkbox"&gt;
+                &lt;input type="checkbox" class="checkboxes"&gt; &lt;label&gt;&lt;/label&gt;
+            &lt;/div&gt;
+        &lt;/td&gt;
+        &lt;td&gt;69&lt;/td&gt;
+        &lt;td&gt;gia hoi sinh vien&lt;/td&gt;
+        &lt;td&gt;SINHVIEN_MAIN_BANNER&lt;/td&gt;
+        &lt;td&gt;&lt;img class="ui mini image centered" src="http://semantic-ui.com/images/wireframe/image.png"&gt;&lt;/td&gt;
+        &lt;td&gt;https://sinhvien.vientdonga.vn/&lt;/td&gt;
+        &lt;td&gt;13/10/2016 - 19/10/2016&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+    </code></pre>
+
+            <pre class=" language-javascript"><code class=" language-javascript">
+var datatable2 = $("#datatable2");
+datatable2.DataTable({
+
+        "bStateSave": true, // save datatable state(pagination, sort, etc) in cookie.
+        "lengthMenu": [
+            [10, 20, 30, 40, -1],
+            [10, 20, 30, 40, "All"] // change per page values here
+        ],
+        "pageLength": 30,
+        "order": [
+            [1, "asc"]
+        ], // set first column as a default sort by asc
+        "columnDefs": [{
+            "targets": 0,
+            "orderable": false,
+            "searchable": false
+        }],
+        "dom": "<'row'<'col-md-6 col-sm-12'l><'col-md-6 col-sm-12 text-right'B f >r><'table-scrollable't><'row'<'col-md-5 col-sm-12'i><'col-md-7 col-sm-12 text-right'p>>",
+        buttons: [
+            {extend: 'print', className: 'teal tiny ui button'},
+            {extend: 'copy', className: ' blue tiny ui button'},
+            {extend: 'pdf', className: ' violet tiny ui button'},
+            {extend: 'excel', className: 'purple tiny ui button'},
+        ]
+    }
+);
+
+datatable2.find('.group-checkable').change(function () {
+    var set = jQuery(this).attr("data-set");
+    var checked = jQuery(this).is(":checked");
+    jQuery(set).each(function () {
+        if (checked) {
+            $(this).prop("checked", true);
+            $(this).parents('tr').addClass("warning");
+        } else {
+            $(this).prop("checked", false);
+            $(this).parents('tr').removeClass("warning");
+        }
+    });
+});
+
+datatable2.on('change', 'tbody tr .checkboxes', function () {
+    $(this).parents('tr').toggleClass("warning");
+});
+    </code></pre>
+
+        </div>
+    </div>
+
+
+    <h4 class="ui dividing header">
+        Datatables responsive
+    </h4>
+
+    <table id="datatable3" class="ui celled table small" cellspacing="0" width="100%">
+        <thead>
+        <tr>
+            <th class="control all">
+            </th>
+            <th class="all">ID</th> <!--Set all để hiện ra-->
+            <th class="all">Title</th>
+            <th class="all">Campaign</th>
+            <th class="all">Image</th>
+            <th class="all">URL</th>
+            <th class="all">Start-end date</th>
+            <th class="none">Vị trí</th> <!--Set none để cột ẩn đi-->
+            <th class="none">Mô tả</th>
+            <th class="none">Trạng thái</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+            <td>
+                <div class="table-responsive-button">
+                    <i class="minus large circle icon"></i>
+                    <i class="plus large  circle icon"></i>
+                </div>
+            </td>
+            <td>69</td>
+            <td>gia hoi sinh vien</td>
+            <td>SINHVIEN_MAIN_BANNER</td>
+            <td><img class="ui mini image centered" src="http://semantic-ui.com/images/wireframe/image.png"></td>
+            <td>https://sinhvien.vientdonga.vn/</td>
+            <td>13/10/2016 - 19/10/2016</td>
+            <td>Trên cùng</td>
+            <td>Roger</td>
+            <td>hoàn tất</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="table-responsive-button">
+                    <i class="minus large circle icon"></i>
+                    <i class="plus large  circle icon"></i>
+                </div>
+            </td>
+            <td>69</td>
+            <td>gia hoi sinh vien</td>
+            <td>SINHVIEN_MAIN_BANNER</td>
+            <td><img class="ui mini image centered" src="http://semantic-ui.com/images/wireframe/image.png"></td>
+            <td>https://sinhvien.vientdonga.vn/</td>
+            <td>13/10/2016 - 19/10/2016</td>
+            <td>Trên cùng</td>
+            <td>Roger</td>
+            <td>hoàn tất</td>
+        </tr>
+        </tbody>
+    </table>
+
+
+    <div class="ui accordion field">
+        <div class="title">
+            <i class="icon dropdown"></i>
+            Xem code
+        </div>
+        <div class="content field">
+
+
+
+     <pre class="language-markup"><code class="language-markup">
+&lt;table id="datatable3" class="ui celled table small" cellspacing="0" width="100%"&gt;
+    &lt;thead&gt;
+    &lt;tr&gt;
+        &lt;th class="control all"&gt;
+        &lt;/th&gt;
+        &lt;th class="all"&gt;ID&lt;/th&gt; &lt!--Set all để hiện ra--&gt;
+        &lt;th class="all"&gt;Title&lt;/th&gt;
+        &lt;th class="all"&gt;Campaign&lt;/th&gt;
+        &lt;th class="all"&gt;Image&lt;/th&gt;
+        &lt;th class="all"&gt;URL&lt;/th&gt;
+        &lt;th class="all"&gt;Start-end date&lt;/th&gt;
+        &lt;th class="none"&gt;Vị trí&lt;/th&gt; &lt!--Set none để cột ẩn đi--&gt;
+        &lt;th class="none"&gt;Mô tả&lt;/th&gt;
+        &lt;th class="none"&gt;Trạng thái&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;/thead&gt;
+
+    &lt;tbody&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;div class="table-responsive-button"&gt;
+                &lt;i class="minus large circle icon"&gt;&lt;/i&gt;
+                &lt;i class="plus large  circle icon"&gt;&lt;/i&gt;
+            &lt;/div&gt;
+        &lt;/td&gt;
+        &lt;td&gt;69&lt;/td&gt;
+        &lt;td&gt;gia hoi sinh vien&lt;/td&gt;
+        &lt;td&gt;SINHVIEN_MAIN_BANNER&lt;/td&gt;
+        &lt;td&gt;&lt;img class="ui mini image centered" src="http://semantic-ui.com/images/wireframe/image.png"&gt;&lt;/td&gt;
+        &lt;td&gt;https://sinhvien.vientdonga.vn/&lt;/td&gt;
+        &lt;td&gt;13/10/2016 - 19/10/2016&lt;/td&gt;
+        &lt;td&gt;Trên cùng&lt;/td&gt;
+        &lt;td&gt;Roger&lt;/td&gt;
+        &lt;td&gt;hoàn tất&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;
+            &lt;div class="table-responsive-button"&gt;
+                &lt;i class="minus large circle icon"&gt;&lt;/i&gt;
+                &lt;i class="plus large  circle icon"&gt;&lt;/i&gt;
+            &lt;/div&gt;
+        &lt;/td&gt;
+        &lt;td&gt;69&lt;/td&gt;
+        &lt;td&gt;gia hoi sinh vien&lt;/td&gt;
+        &lt;td&gt;SINHVIEN_MAIN_BANNER&lt;/td&gt;
+        &lt;td&gt;&lt;img class="ui mini image centered" src="http://semantic-ui.com/images/wireframe/image.png"&gt;&lt;/td&gt;
+        &lt;td&gt;https://sinhvien.vientdonga.vn/&lt;/td&gt;
+        &lt;td&gt;13/10/2016 - 19/10/2016&lt;/td&gt;
+        &lt;td&gt;Trên cùng&lt;/td&gt;
+        &lt;td&gt;Roger&lt;/td&gt;
+        &lt;td&gt;hoàn tất&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+    </code></pre>
+
+            <pre class=" language-javascript"><code class=" language-javascript">
+var datatable3 = $("#datatable3");
+datatable3.DataTable({
+
+        "bStateSave": true, // save datatable state(pagination, sort, etc) in cookie.
+        "lengthMenu": [
+            [10, 20, 30, 40, -1],
+            [10, 20, 30, 40, "All"] // change per page values here
+        ],
+        responsive: {
+            details: {}
+        },
+        "pageLength": 30,
+        "order": [
+            [1, "asc"]
+        ], // set first column as a default sort by asc
+        "columnDefs": [{
+            "targets": 0,
+            "orderable": false,
+            "searchable": false
+        }],
+        "dom": "<'row'<'col-md-6 col-sm-12'l><'col-md-6 col-sm-12 text-right'B f >r><'table-scrollable't><'row'<'col-md-5 col-sm-12'i><'col-md-7 col-sm-12 text-right'p>>",
+        buttons: [
+            {extend: 'print', className: 'teal tiny ui button'},
+            {extend: 'copy', className: ' blue tiny ui button'},
+            {extend: 'pdf', className: ' violet tiny ui button'},
+            {extend: 'excel', className: 'purple tiny ui button'},
+        ]
+    }
+);
+    </code></pre>
+
+        </div>
+    </div>
+
+
+    <div class="ui small info message">
+        Xem thêm về datatable tại đây : <a href="https://www.datatables.net/" target="_blank">Link</a>
+    </div>
+
+
 
 </div>
 
@@ -52,8 +485,6 @@
 
 
 {{/content}}
-
-
 
 
 {{#content "foot" mode="prepend"}}

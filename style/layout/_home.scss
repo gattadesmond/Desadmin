@@ -13,6 +13,10 @@
   flex: 0 0 auto;
 }
 
+body{
+  overflow-x: hidden !important;
+}
+
 .sidebar{
   width: 230px;
   .ui.vertical.menu{
