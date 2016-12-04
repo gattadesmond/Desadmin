@@ -1,1 +1,0 @@
-git subtree push --prefix __PUBLIC origin gh-pages
