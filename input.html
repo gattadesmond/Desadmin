@@ -1,0 +1,465 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+
+
+
+    <link rel="stylesheet" type="text/css" href="semantic/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="datatable/dataTables.semanticui.min.css">
+
+    <link rel="stylesheet" type="text/css" href="prism/prism.css">
+
+
+    <script src="js/jquery.js"></script>
+    <script src="semantic/semantic.min.js"></script>
+
+    <script src="datatable/jquery.dataTables.min.js"></script>
+    <script src="datatable/dataTables.semanticui.min.js"></script>
+
+    <link rel="stylesheet" href="css/inline.css">
+    <link rel="stylesheet" href="css/app.css">
+<!--<link rel="stylesheet" href="assets/css/home.css" />-->
+
+</head>
+
+<body>
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+
+
+<div class="topNav">
+
+    <div class="row between-xs middle-xs">
+        <div class="col-xs ">
+            <div class="logo">
+                <a href="index.html"><img src="https://cdn1.vienthonga.vn/image/2016/10/5/100000_vta-admin-logo.png" width="200"
+                                alt=""></a>
+            </div>
+
+
+            <div class="ui  search">
+                <div class="ui icon input">
+                    <input class="prompt" type="text" placeholder="Tìm kiếm trên trang Admin">
+                    <i class="search icon"></i>
+                </div>
+                <div class="results"></div>
+            </div>
+
+        </div>
+        <div class="col-xs shrink">
+
+            <div class="ui  dropdown top right pointing">
+                <input type="hidden" name="gender">
+
+                <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/jenny.jpg">
+                <span>Username</span>
+
+                <i class="dropdown icon"></i>
+
+                <div class="menu">
+                    <a class="item" href="#link1"><i class="edit icon"></i> Sửa thông tin</a>
+                    <a class="item" href="#link2"><i class="lock icon"></i> Đổi mật khẩu</a>
+                    <div class="divider"></div>
+                    <a class="item" href="#link3"><i class="sign out icon"></i> Đăng xuất</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="row flex-nowrap">
+    <div class="col-xs shrink">
+
+        <div class="sidebar">
+
+            <div class="ui  big label fluid">
+                <i class="cubes icon"></i> Các dự án
+            </div>
+
+
+
+            <div class="ui accordion desadmin-sidebar-accordion">
+                <div class="title active">
+                    <i class="dropdown icon"></i>
+
+                    <i class="shopping bag icon"></i>
+                    MOT
+                </div>
+                <div class="content active">
+
+                    <div class="ui secondary vertical menu">
+                        <a href="index.html" class="item  ">
+                            Trang chủ
+                        </a>
+                       
+                         <a href="header.html " class="item  ">
+                            Header
+                        </a>
+
+                        <a href="message.html " class="item  ">
+                            Message
+                        </a>
+
+
+                        <div class="ui dropdown item" >
+                            <i class="dropdown icon"></i>
+                            Table
+                            <div class="menu">
+                                <a href="datatable.html" class="item   ">Datatable</a>
+                                <a href="table.html" class="item   ">Normal table</a>
+                            </div>
+                        </div>
+
+
+                        <a href="container.html" class="item  ">
+                            Container page
+                        </a>
+
+                        <a href="modal.html" class="item  ">
+                            Modal
+                        </a>
+
+                        <a href="input.html" class="item  active ">
+                            Input, Date, wysiwyg
+                        </a>
+
+                        <a href="dropdown.html" class="item  ">
+                            Dropdown
+                        </a>
+
+                        <a href="checkbox.html" class="item  ">
+                            Checkbox
+                        </a>
+
+                        <a href="button.html" class="item  ">
+                            Button
+                        </a>
+
+                        <a href="form.html" class="item  ">
+                            Form
+                        </a>
+
+                        <a href="sweetalert.html" class="item  ">
+                            Sweet Alert
+                        </a>
+
+                        <a href="validation.html" class="item  ">
+                            Validation
+                        </a>
+
+                        <a href="login.html" class="item  ">
+                            Login page
+                        </a>
+
+                        <a href="chart.html" class="item  ">
+                            Google chart
+                        </a>
+
+
+                    </div>
+
+                </div>
+                <div class="title ">
+                    <i class="dropdown icon"></i>
+
+                    <i class="shopping basket icon"></i>
+                    MARKETING
+                </div>
+                <div class="content ">
+                    <div class="ui secondary vertical menu">
+                        <a class="item ">
+                            Affiliate
+                        </a>
+                        <a class="item">
+                            Factory
+                        </a>
+                        <a class="item">
+                            Sản phẩm
+                        </a>
+
+                        <a class="item">
+                            QL Đơn hàng
+                        </a>
+
+                        <a class="item">
+                            Report
+                        </a>
+
+                        <a class="item">
+                            VTA Event
+                        </a>
+
+                        <a class="item">
+                            VTA App
+                        </a>
+
+
+                    </div>
+
+                </div>
+                <div class="title">
+                    <i class="dropdown icon"></i>
+
+                    <i class="setting  icon"></i>
+                    ADMINSTRATOR
+                </div>
+                <div class="content">
+
+                    <div class="ui secondary vertical menu">
+                        <a class="item ">
+                            Affiliate
+                        </a>
+                        <a class="item">
+                            Factory
+                        </a>
+                        <a class="item">
+                            Sản phẩm
+                        </a>
+
+                        <a class="item">
+                            QL Đơn hàng
+                        </a>
+
+                        <a class="item">
+                            Report
+                        </a>
+
+                        <a class="item">
+                            VTA Event
+                        </a>
+
+                        <a class="item">
+                            VTA App
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+    <div class="col-xs">
+
+
+
+<div class="ui secondary pointing menu menu-ngang">
+    <a class="active item">
+        QL Banner
+    </a>
+    <a class="item">
+        QL Đối tác
+    </a>
+    <a class="item">
+        QL Chương trình
+    </a>
+
+    <a class="item">
+        Co-Brand
+    </a>
+    <a class="item">
+        Sản phẩm bán chạy
+    </a>
+
+</div>
+
+
+<div class="content-padding">
+
+    <h3>Input thường sử dụng
+
+        <div class="ui small basic icon buttons">
+            <a href="#modal1" class="ui button show-modal"><i class="sticky note outline icon "></i> Tạo mới</a>
+            <a href="#link1" class="ui button"><i class="filter icon"></i> Lọc sản phẩm lỗi</a>
+            <a href="#link1" class="ui button"><i class="file excel outline icon"></i> Xuất Excel</a>
+            <a href="#link1" class="ui button"><i class="download icon"></i> Import Excel</a>
+        </div>
+
+    </h3>
+
+    <h5>Input</h5>
+
+    <div class="ui input">
+        <input type="text" placeholder="Search...">
+    </div>
+
+
+    <pre class="language-markup"><code class="language-markup">
+&lt;div class="ui input"&gt;
+    &lt;input type="text" placeholder="Search..."&gt;
+&lt;/div&gt;
+    </code></pre>
+
+    <h5>Focus</h5>
+
+    <div class="ui input focus">
+        <input type="text" placeholder="Search...">
+    </div>
+    
+    <pre class="language-markup"><code class="language-markup">
+&lt;div class="ui input focus"&gt;
+    &lt;input type="text" placeholder="Search..."&gt;
+&lt;/div&gt;
+    </code></pre>
+    
+    
+    <h5>Loading</h5>
+
+    <div class="ui icon input loading">
+        <input type="text" placeholder="Search...">
+        <i class="search icon"></i>
+    </div>
+
+    <pre class="language-markup"><code class="language-markup">
+&lt;div class="ui icon input loading"&gt;
+    &lt;input type="text" placeholder="Search..."&gt;
+    &lt;i class="search icon"&gt;&lt;/i&gt;
+&lt;/div&gt;
+    </code></pre>
+    
+
+    <h5>Disable</h5>
+    <div class="ui disabled input">
+        <input type="text" placeholder="Search...">
+    </div>
+
+    <pre class="language-markup"><code class="language-markup">
+&lt;div class="ui disabled input"&gt;
+    &lt;input type="text" placeholder="Search..."&gt;
+&lt;/div&gt;
+    </code></pre>
+    
+    
+    <h5>Error</h5>
+
+    <div class="ui input error">
+        <input type="text" placeholder="Search...">
+    </div>
+
+    <pre class="language-markup"><code class="language-markup">
+&lt;div class="ui input error"&gt;
+    &lt;input type="text" placeholder="Search..."&gt;
+&lt;/div&gt;
+    </code></pre>
+
+    <h5>Icon</h5>
+    <div class="ui icon input">
+        <input type="text" placeholder="Search...">
+        <i class="search icon"></i>
+    </div>
+    <pre class="language-markup"><code class="language-markup">
+&lt;div class="ui icon input"&gt;
+    &lt;input type="text" placeholder="Search..."&gt;
+    &lt;i class="search icon"&gt;&lt;/i&gt;
+&lt;/div&gt;
+    </code></pre>
+
+    <h5>Date picker</h5>
+    <div class="ui left icon input">
+        <input type="text" class="datepicker">
+        <i class="calendar icon"></i>
+    </div>
+    
+    <pre class="language-markup"><code class="language-markup">
+&lt;div class="ui left icon input"&gt;
+    &lt;input type="text" class="datepicker"&gt;
+    &lt;i class="calendar icon"&gt;&lt;/i&gt;
+&lt;/div&gt;
+    </code></pre>
+
+    <pre class=" language-javascript"><code class=" language-javascript">
+$('.datepicker').pickadate({
+    monthsFull: ["Tháng Một", "Tháng Hai", "Tháng Ba", "Tháng Tư", "Tháng Năm", "Tháng Sáu", "Tháng Bảy", "Tháng Tám", "Tháng Chín", "Tháng Mười", "Tháng Mười Một", "Tháng Mười Hai"],
+    monthsShort: ["Một", "Hai", "Ba", "Tư", "Năm", "Sáu", "Bảy", "Tám", "Chín", "Mưới", "Mười Một", "Mười Hai"],
+    weekdaysFull: ["Chủ Nhật", "Thứ Hai", "Thứ Ba", "Thứ Tư", "Thứ Năm", "Thứ Sáu", "Thứ Bảy"],
+    weekdaysShort: ["C.Nhật", "T.Hai", "T.Ba", "T.Tư", "T.Năm", "T.Sáu", "T.Bảy"],
+    today: "Hôm Nay",
+    clear: "Xoá",
+    firstDay: 1,
+    formatSubmit: 'yyyy/mm/dd',
+    format: 'dd/mm/yyyy'
+})
+</code></pre>
+
+    <h5>Tinymce</h5>
+    <textarea class="editor-tinymce">Easy! You should check out MoxieManager!</textarea>
+
+    <pre class="language-markup"><code class="language-markup">
+&lt;textarea class="editor-tinymce"&gt;Easy! You should check out MoxieManager!&lt;/textarea&gt;
+    </code></pre>
+
+    <pre class=" language-javascript"><code class=" language-javascript">
+tinymce.init({
+    selector:'textarea.editor-tinymce',
+});
+</code></pre>
+
+
+    <div class="ui small info message">
+        Xem thêm về input tại đây : <a href="http://semantic-ui.com/elements/input.html" target="_blank">Link</a> <br>
+
+        Xem thêm về pickadate tại đây : <a href="http://amsul.ca/pickadate.js/date/" target="_blank">Link</a> <br>
+
+        Xem thêm về tinymce tại đây : <a href="https://www.tinymce.com/" target="_blank">Link</a>
+    </div>
+    
+
+</div>
+
+<br>
+
+<br>
+
+
+
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<!--<script src="assets/js/analytics.js"></script>-->
+
+<script src="js/toastr.min.js"></script>
+
+<script src="pickadate/picker.js"></script>
+<script src="pickadate/picker.date.js"></script>
+
+<script src="tinymce/tinymce.min.js"></script>
+
+<script src="prism/prism.js"></script>
+
+<script src="js/sweetalert.min.js"></script>
+
+<script src="js/main.js"></script>
+
+
+
+
+</body>
+
+</html>

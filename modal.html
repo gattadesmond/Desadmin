@@ -1,0 +1,692 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+
+
+
+    <link rel="stylesheet" type="text/css" href="semantic/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="datatable/dataTables.semanticui.min.css">
+
+    <link rel="stylesheet" type="text/css" href="prism/prism.css">
+
+
+    <script src="js/jquery.js"></script>
+    <script src="semantic/semantic.min.js"></script>
+
+    <script src="datatable/jquery.dataTables.min.js"></script>
+    <script src="datatable/dataTables.semanticui.min.js"></script>
+
+    <link rel="stylesheet" href="css/inline.css">
+    <link rel="stylesheet" href="css/app.css">
+<!--<link rel="stylesheet" href="assets/css/home.css" />-->
+
+</head>
+
+<body>
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+
+
+<div class="topNav">
+
+    <div class="row between-xs middle-xs">
+        <div class="col-xs ">
+            <div class="logo">
+                <a href="index.html"><img src="https://cdn1.vienthonga.vn/image/2016/10/5/100000_vta-admin-logo.png" width="200"
+                                alt=""></a>
+            </div>
+
+
+            <div class="ui  search">
+                <div class="ui icon input">
+                    <input class="prompt" type="text" placeholder="Tìm kiếm trên trang Admin">
+                    <i class="search icon"></i>
+                </div>
+                <div class="results"></div>
+            </div>
+
+        </div>
+        <div class="col-xs shrink">
+
+            <div class="ui  dropdown top right pointing">
+                <input type="hidden" name="gender">
+
+                <img class="ui avatar image" src="http://semantic-ui.com/images/avatar/small/jenny.jpg">
+                <span>Username</span>
+
+                <i class="dropdown icon"></i>
+
+                <div class="menu">
+                    <a class="item" href="#link1"><i class="edit icon"></i> Sửa thông tin</a>
+                    <a class="item" href="#link2"><i class="lock icon"></i> Đổi mật khẩu</a>
+                    <div class="divider"></div>
+                    <a class="item" href="#link3"><i class="sign out icon"></i> Đăng xuất</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="row flex-nowrap">
+    <div class="col-xs shrink">
+
+        <div class="sidebar">
+
+            <div class="ui  big label fluid">
+                <i class="cubes icon"></i> Các dự án
+            </div>
+
+
+
+            <div class="ui accordion desadmin-sidebar-accordion">
+                <div class="title active">
+                    <i class="dropdown icon"></i>
+
+                    <i class="shopping bag icon"></i>
+                    MOT
+                </div>
+                <div class="content active">
+
+                    <div class="ui secondary vertical menu">
+                        <a href="index.html" class="item  ">
+                            Trang chủ
+                        </a>
+                       
+                         <a href="header.html " class="item  ">
+                            Header
+                        </a>
+
+                        <a href="message.html " class="item  ">
+                            Message
+                        </a>
+
+
+                        <div class="ui dropdown item" >
+                            <i class="dropdown icon"></i>
+                            Table
+                            <div class="menu">
+                                <a href="datatable.html" class="item   ">Datatable</a>
+                                <a href="table.html" class="item   ">Normal table</a>
+                            </div>
+                        </div>
+
+
+                        <a href="container.html" class="item  ">
+                            Container page
+                        </a>
+
+                        <a href="modal.html" class="item  active ">
+                            Modal
+                        </a>
+
+                        <a href="input.html" class="item  ">
+                            Input, Date, wysiwyg
+                        </a>
+
+                        <a href="dropdown.html" class="item  ">
+                            Dropdown
+                        </a>
+
+                        <a href="checkbox.html" class="item  ">
+                            Checkbox
+                        </a>
+
+                        <a href="button.html" class="item  ">
+                            Button
+                        </a>
+
+                        <a href="form.html" class="item  ">
+                            Form
+                        </a>
+
+                        <a href="sweetalert.html" class="item  ">
+                            Sweet Alert
+                        </a>
+
+                        <a href="validation.html" class="item  ">
+                            Validation
+                        </a>
+
+                        <a href="login.html" class="item  ">
+                            Login page
+                        </a>
+
+                        <a href="chart.html" class="item  ">
+                            Google chart
+                        </a>
+
+
+                    </div>
+
+                </div>
+                <div class="title ">
+                    <i class="dropdown icon"></i>
+
+                    <i class="shopping basket icon"></i>
+                    MARKETING
+                </div>
+                <div class="content ">
+                    <div class="ui secondary vertical menu">
+                        <a class="item ">
+                            Affiliate
+                        </a>
+                        <a class="item">
+                            Factory
+                        </a>
+                        <a class="item">
+                            Sản phẩm
+                        </a>
+
+                        <a class="item">
+                            QL Đơn hàng
+                        </a>
+
+                        <a class="item">
+                            Report
+                        </a>
+
+                        <a class="item">
+                            VTA Event
+                        </a>
+
+                        <a class="item">
+                            VTA App
+                        </a>
+
+
+                    </div>
+
+                </div>
+                <div class="title">
+                    <i class="dropdown icon"></i>
+
+                    <i class="setting  icon"></i>
+                    ADMINSTRATOR
+                </div>
+                <div class="content">
+
+                    <div class="ui secondary vertical menu">
+                        <a class="item ">
+                            Affiliate
+                        </a>
+                        <a class="item">
+                            Factory
+                        </a>
+                        <a class="item">
+                            Sản phẩm
+                        </a>
+
+                        <a class="item">
+                            QL Đơn hàng
+                        </a>
+
+                        <a class="item">
+                            Report
+                        </a>
+
+                        <a class="item">
+                            VTA Event
+                        </a>
+
+                        <a class="item">
+                            VTA App
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+    <div class="col-xs">
+
+
+
+<div class="ui secondary pointing menu menu-ngang">
+    <a class="active item">
+        QL Banner
+    </a>
+    <a class="item">
+        QL Đối tác
+    </a>
+    <a class="item">
+        QL Chương trình
+    </a>
+
+    <a class="item">
+        Co-Brand
+    </a>
+    <a class="item">
+        Sản phẩm bán chạy
+    </a>
+
+</div>
+
+
+<div class="content-padding">
+
+    <h3>Modal
+
+        <div class="ui small basic icon buttons">
+            <a href="#modal1" class="ui button show-modal"><i class="sticky note outline icon "></i> Tạo mới</a>
+            <a href="#link1" class="ui button"><i class="filter icon"></i> Lọc sản phẩm lỗi</a>
+            <a href="#link1" class="ui button"><i class="file excel outline icon"></i> Xuất Excel</a>
+            <a href="#link1" class="ui button"><i class="download icon"></i> Import Excel</a>
+        </div>
+
+    </h3>
+
+
+    <h4 class="ui dividing header">
+       Tạo một modal mới
+    </h4>
+
+    <pre class="language-markup"><code class="language-markup">
+&lt;div class="ui modal" id="modal-example1"&gt; &lt;!-- modal tạo có id là modal-example1 --&gt;
+    &lt;div class="header"&gt;Tiêu đề modal&lt;/div&gt;
+    &lt;div class="content"&gt;
+        &lt;p&gt;Nội dung modal&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="actions"&gt;
+        &lt;div class="ui deny button"&gt;Hủy&lt;/div&gt;
+
+        &lt;div class="ui positive right labeled icon button"&gt;
+            Đồng ý
+            &lt;i class="checkmark icon"&gt;&lt;/i&gt;
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;
+    </code></pre>
+
+    <h4 class="">
+        Tạo button gọi modal
+    </h4>
+
+    <pre class="language-markup"><code class="language-markup">
+&lt;a href="#modal-example1" class="ui button show-modal"&gt; &lt;!-- Gọi modal có id là modal-example1, thêm class "show-modal" --&gt;
+    Gọi modal bẳng thẻ a
+&lt;/a&gt;
+
+&lt;button data-modal="modal-example1" class="ui button show-modal"&gt; &lt;!-- Gọi modal có id là modal-example1 --&gt;
+    Gọi modal bằng button
+&lt;/button&gt;
+    </code></pre>
+
+    <a href="#modal-example1" class="ui button show-modal">
+        Gọi modal bẳng thẻ a
+    </a>
+
+    <button data-modal="modal-example1" class="ui button show-modal">
+        Gọi modal bằng button
+    </button>
+
+    <div class="ui modal" id="modal-example1"> <!-- modal tạo có id là modal-example1 -->
+        <div class="header">Tiêu đề modal</div>
+        <div class="content">
+            <p>Nội dung modal</p>
+        </div>
+        <div class="actions">
+            <div class="ui deny button">Hủy</div>
+
+            <div class="ui positive right labeled icon button">
+                Đồng ý
+                <i class="checkmark icon"></i>
+            </div>
+
+        </div>
+    </div>
+    <h4>Code javascript, khởi tạo modal khi element có class "show-modal"</h4>
+    <pre class=" language-javascript"><code class=" language-javascript">
+$(".show-modal").on("click", function (e) {
+    e.preventDefault();
+    var $this = $(this);
+    var name;
+    if ($this.attr('data-modal')) {
+        name = "#" + $this.data("modal");
+    } else {
+        name = $this.attr('href')
+    }
+    $(name)
+        .modal({
+            transition: "fade",
+            closable: false,
+            autofocus: false,
+            detachable: false,
+        })
+        .modal('show')
+});
+    </code></pre>
+
+
+
+    <h4 class="ui dividing header">
+        Callback modal
+    </h4>
+
+
+    <button id="btn-modal-callback" class="ui button">
+        Gọi modal callback
+    </button>
+
+
+
+    <pre class=" language-javascript"><code class=" language-javascript">
+$('#btn-modal-callback').click(function(){
+    $('#modal-callback')
+            .modal({
+                closable  : false,
+                onShow    : function(){
+                   console.log("Modal show");
+                },
+                onVisible    : function(){ /
+                    console.log("Modal visible");
+                },
+                onHide    : function(){
+                    console.log("Modal hide");
+                },
+                onHidden    : function(){
+                    console.log("Modal hidden");
+                },
+                onDeny    : function(){
+                    window.alert('Wait not yet!');
+                    return false;
+                },
+                onApprove : function() {
+                    window.alert('Approved!');
+                }
+            })
+            .modal('show')
+    ;
+});
+    </code></pre>
+
+
+
+    <div class="ui modal" id="modal-callback"> <!-- modal tạo có id là modal-example1 -->
+        <div class="header">Tiêu đề modal</div>
+        <div class="content">
+            <p>Nội dung modal</p>
+        </div>
+        <div class="actions">
+            <div class="ui deny button">Hủy</div> <!-- class deny -->
+
+            <div class="ui positive right labeled icon ok button"> <!-- class positive -->
+                Đồng ý
+                <i class="checkmark icon"></i>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        $('#btn-modal-callback').click(function(){
+
+            $('#modal-callback')
+                    .modal({
+                        closable  : false,
+                        onShow    : function(){
+                           console.log("Modal show");
+                        },
+                        onVisible    : function(){
+                            console.log("Modal visible");
+                        },
+                        onHide    : function(){
+                            console.log("Modal hide");
+                        },
+                        onHidden    : function(){
+                            console.log("Modal hidden");
+                        },
+                        onDeny    : function(){
+                            window.alert('Wait not yet!');
+                            return false;
+                        },
+                        onApprove : function() {
+                            window.alert('Approved!');
+                        }
+                    })
+                    .modal('show')
+            ;
+
+        });
+    </script>
+
+
+    <div class="ui small info message">
+        Xem thêm về modal tại đây : <a href="http://semantic-ui.com/modules/modal.html#/settings" target="_blank">Link</a>
+    </div>
+
+
+
+
+
+
+
+</div>
+
+<br>
+
+<br>
+<div class="ui modal" id="modal1">
+    <i class="close icon"></i>
+    <div class="header">
+        Tạo mới banner
+    </div>
+    <div class="content">
+
+
+        <div class="ui  form small">
+
+            <h4 class="ui  header">Hệ thống và chương trình sử dụng</h4>
+
+            <div class="fields">
+                <div class="four wide field">
+                    <select class="ui dropdown">
+                        <option value="">Chọn hệ thống</option>
+                        <option value="1">Administrator</option>
+                        <option value="2">WEBVTA</option>
+                        <option value="3">VNPOST</option>
+                        <option value="4">Mobile app</option>
+                    </select>
+                </div>
+                <div class="four wide field">
+                    <select class="ui search dropdown">
+                        <option value="">Chọn chương trình</option>
+                        <option value="1">Administrator</option>
+                        <option value="2">WEBVTA</option>
+                        <option value="3">VNPOST</option>
+                        <option value="4">Mobile app</option>
+                    </select>
+                </div>
+
+            </div>
+
+
+            <h4 class="ui  header">Thời gian sử dụng cho banner</h4>
+
+            <div class="fields">
+                <div class="four wide field">
+
+                    <div class="ui left icon input">
+                        <input type="text" class="datepicker" placeholder="Ngày bắt đầu">
+                        <i class="calendar icon"></i>
+                    </div>
+
+                </div>
+                <div class="four wide field">
+                    <div class="ui left icon input">
+                        <input type="text" class="datepicker" placeholder="Ngày kết thúc">
+                        <i class="calendar icon"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <h4 class="ui  header">Thuộc tính hình ảnh</h4>
+
+            <div class="fields">
+                <div class="four wide field">
+                    <input type="text" placeholder="Title hay ALT cho banner">
+                </div>
+                <div class="four wide field">
+                    <input type="text" placeholder="URL hình ảnh">
+                </div>
+                <div class="four wide field">
+
+                </div>
+            </div>
+
+            <h4 class="ui  header">Kích thước & vị trí banner</h4>
+
+            <div class="fields">
+                <div class="four wide field">
+                    <select class="ui search dropdown">
+                        <option value="">Kích thước banner</option>
+                        <option value="1">Administrator</option>
+                        <option value="2">WEBVTA</option>
+                        <option value="3">VNPOST</option>
+                        <option value="4">Mobile app</option>
+                    </select>
+                </div>
+                <div class="four wide field">
+                    <select class="ui search dropdown">
+                        <option value="">Vị trí banner</option>
+                        <option value="1">Administrator</option>
+                        <option value="2">WEBVTA</option>
+                        <option value="3">VNPOST</option>
+                        <option value="4">Mobile app</option>
+                    </select>
+                </div>
+                <div class="four wide field">
+
+                    <select class="ui search dropdown">
+                        <option value="">Vị trí trên trang</option>
+                        <option value="1">Administrator</option>
+                        <option value="2">WEBVTA</option>
+                        <option value="3">VNPOST</option>
+                        <option value="4">Mobile app</option>
+                    </select>
+
+                </div>
+            </div>
+
+
+            <h4 class="ui  header">Link hình ảnh</h4>
+
+            <div class="fields">
+
+                <div class="eight wide field">
+                    <img class="ui small  image" src="http://placehold.it/350x150"> <br>
+                    <input type="url" placeholder="Link hình ảnh ">
+                </div>
+
+
+                <div class="eight wide field">
+                    <img class="ui small  image" src="http://placehold.it/350x150"> <br>
+
+                    <input type="url" placeholder="Link hình ảnh mobile ">
+                </div>
+
+            </div>
+
+            <h4 class="ui  header">Bài viết sản phẩm</h4>
+
+            <textarea class="editor-tinymce">Easy! You should check out MoxieManager!</textarea>
+
+
+        </div>
+
+
+    </div>
+    <div class="actions">
+        <div class="ui deny button">
+            Hủy
+        </div>
+        <div class="ui positive right labeled icon button">
+            Tạo banner
+            <i class="checkmark icon"></i>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="ui modal" id="modal2">
+    <i class="close icon"></i>
+    <div class="header">
+        Modal Title
+    </div>
+    <div class="image content">
+        <div class="image">
+            An image can appear on left or an icon
+        </div>
+        <div class="description">
+            A description can appear on the right
+        </div>
+    </div>
+    <div class="actions">
+        <div class="ui deny button">
+            Hủy
+        </div>
+        <div class="ui positive right labeled icon button">
+            Tạo đơn hàng
+            <i class="checkmark icon"></i>
+        </div>
+    </div>
+</div>
+
+
+
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<!--<script src="assets/js/analytics.js"></script>-->
+
+<script src="js/toastr.min.js"></script>
+
+<script src="pickadate/picker.js"></script>
+<script src="pickadate/picker.date.js"></script>
+
+<script src="tinymce/tinymce.min.js"></script>
+
+<script src="prism/prism.js"></script>
+
+<script src="js/sweetalert.min.js"></script>
+
+<script src="js/main.js"></script>
+
+
+
+
+</body>
+
+</html>
