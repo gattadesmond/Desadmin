@@ -1,6 +1,6 @@
 # Desadmin dashboard 
 
-Link demo : [Desadmin](http://10.10.40.131:9000/)
+Link demo : [Desadmin](https://gattadesmond.github.io/Desadmin/)
 
 Desadmin is a template admin base on Semantic UI, designed for a great experience!
 
